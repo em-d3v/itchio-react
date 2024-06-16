@@ -1,0 +1,65 @@
+{
+  "name": "itchio-react",
+  "version": "0.1.0",
+  "keywords": [
+    "react",
+    "itchio",
+    "WebGL",
+    "HTML5"
+  ],
+  "private": true,
+  "author": {
+    "name": "em-d3v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/em-d3v/itchio-react.git"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.107.0",
+    "@react-three/fiber": "^8.16.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "three": "^0.165.0",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/webpack": "^5.28.5",
+    "webpack":"^5.64.0"
+  },
+  "engines": {
+    "node": ">=18.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "ecmaFeatures": {},
+    "env": {
+      "node": true
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
