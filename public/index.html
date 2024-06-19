@@ -3,11 +3,23 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="icon" href="%PUBLIC_URL%/src/img/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Test React Project" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--  <link rel="apple-touch-icon" href="%PUBLIC_URL%/src/img/logo192.png" />-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=Lugrasimo&family=Rosarivo:ital@0;1&family=Special+Elite&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/gui.css">
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Lugrasimo&family=Rosarivo:ital@0;1&family=Special+Elite&display=swap');
+  </style>
+
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,15 +36,16 @@
     -->
   <title>React App</title>
   <!--SCRIPTS-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/6.23.1/react-router.production.min.js"
-    integrity="sha512-jeti1W4s/7yzVMGvR4JJBb2rZbc2aCQeCZozvwUjm9TVOzk39ZUjex3cGelN1LQbqjZyMFnj71d6PX2MviSXCQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-is/18.3.1/cjs/react-is.production.min.js"
-    integrity="sha512-7tmQCIngBCyNlDtDg31ZalbtoWQbMtqK+8Yo2Vgk6DFbC4YTFfqmLzuSwYWqMnmpmuwZBMlp/POm8ES1PHUwcg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/cjs/react.production.min.js"
-    integrity="sha512-Xq/DcMubl2+kTVpRwbBfseLKhRaJ+jJbeOo6vVSuXdIzPipKG4+tgO72Yf/Ir4cBuYRDlTY5LX/4IVtR8TxV/Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="src/js/front.js" type="text/javascript"></script>
+  <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/6.23.1/react-router.production.min.js"-->
+  <!--    integrity="sha512-jeti1W4s/7yzVMGvR4JJBb2rZbc2aCQeCZozvwUjm9TVOzk39ZUjex3cGelN1LQbqjZyMFnj71d6PX2MviSXCQ=="-->
+  <!--    crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+  <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-is/18.3.1/cjs/react-is.production.min.js"-->
+  <!--    integrity="sha512-7tmQCIngBCyNlDtDg31ZalbtoWQbMtqK+8Yo2Vgk6DFbC4YTFfqmLzuSwYWqMnmpmuwZBMlp/POm8ES1PHUwcg=="-->
+  <!--    crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+  <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/cjs/react.production.min.js"-->
+  <!--    integrity="sha512-Xq/DcMubl2+kTVpRwbBfseLKhRaJ+jJbeOo6vVSuXdIzPipKG4+tgO72Yf/Ir4cBuYRDlTY5LX/4IVtR8TxV/Q=="-->
+  <!--    crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/98e4c48f68.js" crossorigin="anonymous"></script>
@@ -47,22 +60,33 @@
         "three/addons":"https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"
       }
     }
-    </script>
+  </script>
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-  <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<!---->
+<!--<div class="main">-->
+<!--&lt;!&ndash;  <canvas id="map"></canvas>&ndash;&gt;-->
+<!--  -->
+<!--</div>-->
+<div id="res" hidden="hidden">
+  <img alt="map" id="map-inf"  src="src/img/map-inf.png">
+  <img alt="map" id="map_tiles"  src="src/img/map_tiles.png">
+</div>
+<div id="root">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+</div>
+<!--
+    This HTML file is a template.
+    If you open it directly in the browser, you will see an empty page.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    You can add webfonts, meta tags, or analytics to this file.
+    The build step will place the bundled scripts into the <body> tag.
+
+    To begin the development, run `npm start` or `yarn start`.
+    To create a production bundle, use `npm run build` or `yarn build`.
+  -->
 </body>
 
 </html>
